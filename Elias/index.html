@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>VueJS Test</title>
+        <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+        <script src="Content.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+        <script src="moment.js"></script>
+        <script src="background-check.js"></script>
+       
+        
+</head>
+
+<body >
+  <canvas id=backgroundImage></canvas>
+    <div id="menue" class="ui">
+      <img id ="settings" src="settings.png" class="ui"></img> 
+      <div id="menueitems" v-show="showIt" class="ui">
+       <h2 id="changeID" class="ui" >New Picture </h2>
+       <h2 id="changeTheme" class="ui"> change Theme </h2>
+       <h2 id="clear" class="ui"> clear Todos</h2>
+      </div>
+    </div> 
+   
+ 
+<div id="app" class="ui">
+   
+<div  id="Clock" class="ui"  >
+                {{timeOne}}
+<div id="Date" class="ui">
+              {{ timeTwo }}
+            </div>
+               
+        </div>
+<div id="input" class="ui">
+          <input class="ui" id="inputToDo" type="text" v-model="todoList" placeholder="what are your  3 main goals for today?"v-on:keyup="addToList" >
+        </div>
+        <div id="todo" class="ui" >
+        <ul id=todos class="ui"></ul>
+      </div>
+ <!--           <h2>Todos:</h2>
+            <ol>
+              <li v-for="todo in todos">
+                <label>
+                  <input type="checkbox"
+                    v-on:change="toggle(todo)"
+                    v-bind:checked="todo.done">
+                  <del v-if="todo.done">
+                    {{ todo.text }}
+                  </del>
+                  <span v-else>
+                    {{ todo.text }}
+                  </span>
+                </label>
+              </li>
+            </ol>
+            <button v-on:click="add">add</button>
+            <button v-on:click="remove">remove</button>
+          -->         </div>
+</body>
+</html>

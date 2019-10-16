@@ -1,0 +1,95 @@
+body{
+  background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-blend-mode: difference ;
+    
+}
+
+  #app {
+    width: 70%;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 auto;
+    transition: all 0.2s;
+    font-family: 'Fira Sans', sans-serif;
+    
+  }
+ 
+  li {
+    margin: 8px 0;
+  }
+  
+  h2 {
+    font-weight: bold;
+    
+  }
+  .blend {
+    mix-blend-mode: exclusion;
+  }
+
+  #Clock {
+    
+    font-size: 12vw;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 110%;
+    mix-blend-mode: hard-light;
+  }
+  #Date {
+    font-size: 3vw;
+    margin: 0 auto 5%;
+  }
+  #input {
+    width: 110%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin:0 auto;
+  }
+  #todos {
+   font-size: 3em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.959);
+    list-style: none;
+    transition: 2s
+  }
+  input{
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.959);
+  }
+  input:focus {
+    background-color: rgba(245, 222, 179, 0);
+    outline: none;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center;
+    color: rgba(207, 202, 202, 0.774);
+    
+  }
+  li{
+    -webkit-transition: all 1400ms ease-out;
+    transition: all 1400ms ease-out;
+  }
+  #changeID{  width: 3vw;
+              height: 3vh;
+             
+
+  }
+  #app{ 
+        width: 50%;
+      
+      
+          }
+  #menue{
+    float: left;
+    width: 10%;
+    height: 70vh;
+    color: rgba(255, 255, 255, 0.959);
+    font-family: 'Fira Sans', sans-serif;
+  }
